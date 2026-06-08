@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AetherFi Chain</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+  <nav class="navbar">
+
+    <div class="logo">
+      AetherFi Chain
+    </div>
+
+    <ul class="nav-links">
+
+      <li><a href="#protocol">Protocol</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#validators">Validators</a></li>
+      <li><a href="#ecosystem">Ecosystem</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+
+    </ul>
+
+    <button id="connectBtn">
+      Connect Wallet
+    </button>
+
+  </nav>
+
+</header>
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <div class="hero-badge">
+      DECENTRALIZED LIQUIDITY & STAKING NETWORK
+    </div>
+
+    <h1>
+      Building Scalable Infrastructure
+      for <span>Next Generation DeFi</span>
+    </h1>
+
+    <p>
+      AetherFi Chain combines institutional-grade staking,
+      modular blockchain infrastructure, cross-chain liquidity,
+      and ultra-fast settlement layers to power the future
+      of decentralized finance.
+    </p>
+
+    <div class="hero-buttons">
+
+      <button class="primary-btn">
+        Launch App
+      </button>
+
+      <button class="secondary-btn">
+        Read Docs
+      </button>
+
+    </div>
+
+    <div class="wallet-box">
+
+      <p id="walletAddress">
+        Wallet Not Connected
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="stats">
+
+  <div class="stat-card">
+    <h2>$8.4B+</h2>
+    <p>Total Value Locked</p>
+  </div>
+
+  <div class="stat-card">
+    <h2>980K+</h2>
+    <p>Active Wallets</p>
+  </div>
+
+  <div class="stat-card">
+    <h2>72+</h2>
+    <p>Integrated Networks</p>
+  </div>
+
+  <div class="stat-card">
+    <h2>0.1s</h2>
+    <p>Finality Speed</p>
+  </div>
+
+</section>
+
+<section class="why" id="protocol">
+
+  <div class="section-title">
+    <h2>Why AetherFi Chain</h2>
+    <p>
+      Designed to solve liquidity fragmentation,
+      inefficient staking infrastructure,
+      and scalability limitations across Web3 ecosystems.
+    </p>
+  </div>
+
+  <div class="why-grid">
+
+    <div class="why-card">
+
+      <h3>Modular Architecture</h3>
+
+      <p>
+        AetherFi Chain leverages modular execution layers
+        for scalable throughput, optimized validator performance,
+        and seamless DeFi integrations.
+      </p>
+
+    </div>
+
+    <div class="why-card">
+
+      <h3>Institutional Staking</h3>
+
+      <p>
+        Enterprise-grade validator systems provide secure
+        staking opportunities with transparent yield generation
+        and decentralized governance participation.
+      </p>
+
+    </div>
+
+    <div class="why-card">
+
+      <h3>Cross-Chain Liquidity</h3>
+
+      <p>
+        Unified liquidity infrastructure connects multiple chains,
+        enabling efficient asset transfers and scalable DeFi markets.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="features" id="how">
+
+  <div class="section-title">
+    <h2>How AetherFi Chain Works</h2>
+  </div>
+
+  <div class="feature-card">
+
+    <div class="feature-icon">⚡</div>
+
+    <h3>Execution Layer</h3>
+
+    <p>
+      High-speed decentralized execution engine
+      enabling low latency transactions and
+      scalable smart contract deployment.
+    </p>
+
+  </div>
+
+  <div class="feature-card">
+
+    <div class="feature-icon">🔒</div>
+
+    <h3>Validator Consensus</h3>
+
+    <p>
+      Proof-of-Stake validator infrastructure secures
+      the network using distributed consensus and
+      slashing protection systems.
+    </p>
+
+  </div>
+
+  <div class="feature-card">
+
+    <div class="feature-icon">🌐</div>
+
+    <h3>Cross-Chain Bridge</h3>
+
+    <p>
+      Secure interoperability framework connecting
+      Ethereum, Layer-2 ecosystems,
+      and emerging blockchain networks.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="validators" id="validators">
+
+  <div class="section-title">
+    <h2>Validator Ecosystem</h2>
+    <p>
+      AetherFi validators secure the network,
+      process transactions,
+      and maintain decentralized governance.
+    </p>
+  </div>
+
+  <div class="validator-grid">
+
+    <div class="validator-card">
+      <h3>4,800+</h3>
+      <p>Active Validators</p>
+    </div>
+
+    <div class="validator-card">
+      <h3>99.99%</h3>
+      <p>Network Uptime</p>
+    </div>
+
+    <div class="validator-card">
+      <h3>APY 8.2%</h3>
+      <p>Average Staking Yield</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="ecosystem" id="ecosystem">
+
+  <div class="section-title">
+    <h2>Ecosystem & Token Utility</h2>
+  </div>
+
+  <div class="eco-grid">
+
+    <div class="eco-card">
+      <h3>Governance</h3>
+      <p>
+        AEFI token holders participate in protocol voting,
+        treasury management, and ecosystem proposals.
+      </p>
+    </div>
+
+    <div class="eco-card">
+      <h3>Liquidity Mining</h3>
+      <p>
+        Earn rewards by providing liquidity
+        across integrated DeFi protocols and bridges.
+      </p>
+    </div>
+
+    <div class="eco-card">
+      <h3>Validator Rewards</h3>
+      <p>
+        Stake AEFI tokens to support validators
+        and receive network yield incentives.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="roadmap" id="roadmap">
+
+  <h2>Development Roadmap</h2>
+
+  <div class="roadmap-grid">
+
+    <div class="roadmap-card">
+
+      <h3>Q4 2025</h3>
+
+      <p>
+        Core network launch, validator onboarding,
+        staking architecture deployment,
+        and smart contract security audits.
+      </p>
+
+    </div>
+
+    <div class="roadmap-card">
+
+      <h3>Q1 2026</h3>
+
+      <p>
+        Governance protocol activation,
+        liquid staking release,
+        and ecosystem grant program expansion.
+      </p>
+
+    </div>
+
+    <div class="roadmap-card">
+
+      <h3>Q2 2026</h3>
+
+      <p>
+        Cross-chain bridge integrations,
+        Layer-2 support,
+        and institutional liquidity vaults.
+      </p>
+
+    </div>
+
+    <div class="roadmap-card">
+
+      <h3>2027+</h3>
+
+      <p>
+        DAO treasury governance,
+        AI-powered analytics,
+        modular rollup infrastructure,
+        and global validator scaling.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="footer-logo">
+    AetherFi Chain
+  </div>
+
+  <div class="footer-links">
+
+    <a href="#">GitHub</a>
+    <a href="#">Docs</a>
+    <a href="#">Discord</a>
+    <a href="#">Twitter</a>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
