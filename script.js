@@ -6,45 +6,52 @@ document.getElementById("walletAddress");
 
 async function connectWallet(){
 
-  if(!window.ethereum){
+if(!window.ethereum){
 
-    alert("Please install MetaMask");
+```
+alert("Please install MetaMask Wallet");
 
-    return;
-  }
+return;
+```
 
-  try{
+}
 
-    const accounts =
-    await ethereum.request({
-      method:"eth_requestAccounts"
-    });
+try{
 
-    const userAddress =
-    accounts[0];
+```
+const accounts =
+await ethereum.request({
+  method:"eth_requestAccounts"
+});
 
-    walletAddress.innerText =
-      userAddress.substring(0,6)
-      + "..."
-      + userAddress.substring(userAddress.length - 4);
+const userAddress =
+accounts[0];
 
-    connectBtn.innerText =
-      "Wallet Connected";
+walletAddress.innerText =
+  userAddress.substring(0,6)
+  + "..."
+  + userAddress.substring(userAddress.length - 4);
 
-  }catch(error){
+connectBtn.innerText =
+  "Wallet Connected";
+```
 
-    console.log(error);
+}catch(error){
 
-    walletAddress.innerText =
-      "Connection Failed";
+```
+console.log(error);
 
-  }
+walletAddress.innerText =
+  "Connection Failed";
+```
+
+}
 
 }
 
 connectBtn.addEventListener(
-  "click",
-  connectWallet
+"click",
+connectWallet
 );
 
 const navLinks =
@@ -52,20 +59,22 @@ document.querySelectorAll(".nav-links a");
 
 navLinks.forEach(link => {
 
-  link.addEventListener("click", function(e){
+link.addEventListener("click", function(e){
 
-    e.preventDefault();
+```
+e.preventDefault();
 
-    const targetId =
-    this.getAttribute("href");
+const targetId =
+this.getAttribute("href");
 
-    const targetSection =
-    document.querySelector(targetId);
+const targetSection =
+document.querySelector(targetId);
 
-    targetSection.scrollIntoView({
-      behavior:"smooth"
-    });
+targetSection.scrollIntoView({
+  behavior:"smooth"
+});
+```
 
-  });
+});
 
 });
